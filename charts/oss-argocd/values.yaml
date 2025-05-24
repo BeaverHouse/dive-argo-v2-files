@@ -25,3 +25,4 @@ server:
       cert-manager.io/cluster-issuer: tls-issuer
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    tls: true
