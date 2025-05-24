@@ -6,3 +6,6 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 
 sleep 30
 
+kubectl apply -f charts/oss-cert-manager/externalsecret.yaml
+
+kubectl apply -f charts/oss-cert-manager/clusterissuer.yaml
