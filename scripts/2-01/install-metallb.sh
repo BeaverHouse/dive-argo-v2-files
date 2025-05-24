@@ -7,3 +7,5 @@ kubectl apply -f charts/oss-metallb/namespace.yaml
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v${version}/config/manifests/metallb-native.yaml
 
 kubectl apply -f charts/oss-metallb/ipconfig.yaml
+
+echo "Successfully installed MetalLB"
