@@ -11,3 +11,5 @@ helm upgrade --install argocd argo/argo-cd --namespace argo-project --create-nam
     --values charts/oss-argocd/values.yaml \
     --create-namespace \
     --version $version
+
+microk8s kubectl apply -f charts/ingress/argocd.yaml --namespace ingress-nginx
