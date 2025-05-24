@@ -1,0 +1,23 @@
+global:
+  domain: v2.argocd.haulrest.me
+
+configs:
+  params:
+    server.insecure: true
+  cm:
+    url: https://v2.argocd.haulrest.me
+    dex.config: |
+      connectors:
+      - type: github
+        id: github
+        name: GitHub
+        config:
+          clientID: $github-oauth-secret:clientId
+          clientSecret: $github-oauth-secret:clientSecret
+          orgs:
+            - name: BeaverHouse
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
