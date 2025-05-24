@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="0.17.1-rc1"
+version="0.17.0"
 
 helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
