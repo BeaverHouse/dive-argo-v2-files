@@ -2,10 +2,10 @@
 
 version="1.17.2"
 
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v${version}/cert-manager.yaml
+microk8s kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v${version}/cert-manager.yaml
 
 sleep 30
 
-kubectl apply -f charts/oss-cert-manager/externalsecret.yaml
+microk8s kubectl apply -f charts/oss-cert-manager/externalsecret.yaml
 
-kubectl apply -f charts/oss-cert-manager/clusterissuer.yaml
+microk8s kubectl apply -f charts/oss-cert-manager/clusterissuer.yaml
