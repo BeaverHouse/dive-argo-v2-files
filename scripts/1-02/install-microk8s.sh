@@ -1,7 +1,5 @@
 #!/bin/bash
 
-HOSTNAME="ubuntu-temp-vmware"
-
 # Install MicroK8s
 sudo snap install microk8s --classic
 
