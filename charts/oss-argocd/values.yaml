@@ -18,6 +18,7 @@ configs:
             - name: BeaverHouse
     policy.csv: |
       g, admin, role:admin
+
 server:
   ingress:
     enabled: true
