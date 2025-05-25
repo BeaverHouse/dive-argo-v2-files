@@ -17,7 +17,7 @@ configs:
           orgs:
             - name: BeaverHouse
     policy.csv: |
-      g, admin, role:admin
+      g, org:Owner, role:admin
 
 server:
   ingress:
